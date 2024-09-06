@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="calculator">
+    <div class="calculator__show">
+      <input readonly class="show-input">
+      <p class="show-result"></p>
+    </div>
+    <div class="buttons">
+      <button type="button" onclick="clearInput()" class="dark-gray">C</button>
+      <button type="button" class="dark-gray" onclick="clearInput()">CE</button>
+      <button type="button" onclick="showInInput('%')" class="dark-gray">%</button>
+      <button type="button" onclick="showInInput('/')" class="bg-warning">/</button>
+      <button type="button" onclick="showInInput('7')">7</button>
+      <button type="button" onclick="showInInput('8')">8</button>
+      <button type="button" onclick="showInInput('9')">9</button>
+      <button type="button" onclick="showInInput('*')" class="bg-warning">*</button>
+      <button type="button" onclick="showInInput('4')">4</button>
+      <button type="button" onclick="showInInput('5')">5</button>
+      <button type="button" onclick="showInInput('6')">6</button>
+      <button type="button" onclick="showInInput('-')" class="bg-warning">-</button>
+      <button type="button" onclick="showInInput('1')">1</button>
+      <button type="button" onclick="showInInput('2')">2</button>
+      <button type="button" onclick="showInInput('3')">3</button>
+      <button type="button" onclick="showInInput('+')" class="bg-warning">+</button>
+      <button type="button" onclick="showInInput('0')">0</button>
+      <button type="button" onclick="showInInput('.')">.</button>
+      <button type="button" onclick="deleteLast()"><img src="imgs/Backspace.png" alt=""></button>
+      <button type="button" onclick="calculate()" class="bg-warning">=</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
